@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link href='https://fonts.googleapis.com/css?family=Shadows Into Light' rel='stylesheet'>-->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+     <!--game start modal-->
+    <body>
+    <section class="memory-menu-bar">
+        <div class="inner">
+            <div class="left"><h1 class="memory-app-name">Match Cars</h1></div>
+            <div class="right"><span>Setting</span>&nbsp;&nbsp;<a href="#settings" onclick="showMenu()"><img id="memory-settings-icon" src="images/gear.png" /></a></div>
+        </div>
+    </section>
+        <section id="start-modal" class="modal show">
+            <div class="modal-window">
+                <div class="modal-header">
+                    <span class="modal-text">Memory Game</span>
+                    <div></div>
+                </div>
+                <form class="start-form">
+                    <h2 class="memory--settings-text">What level do you want to play</h2>
+                    <select id="memory-options">
+                        <option value="2x3">Easy</option>
+                        <option value="3x4" selected>Medium</option>
+                        <option value="4x5">Hard</option>
+                        <option value="5x6">Don't do it!</option>
+                    </select>
+                    <input id="name-text" type="text" value="" placeholder="please type your name"/>
+                    <input id="start-button" type="button" value="Start New Game" onclick="startGame()"/>
+                </form>
+            </div>
+        </section>
+        <!--main game part-->
+        <section id="memory--container" class="container">
+            <header>
+            <h1 id="title">Memory Game</h1>
+            </header>
+
+            <section class="score-panel">
+                <ul class="stars">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+
+                <span class="moves">0</span> Move(s)
+
+                <div class="timer">
+                </div>
+
+
+            </section>
+
+            <ul id="card-deck" class="deck">
+
+            </ul>
+        </section>
+         <!--game end part-->
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2 id="cong-header"></h2>
+                <div class="content-1">
+                    Congratulations you're a winner
+                </div>
+                <div class="content-2">
+                    <p>You made <span id=finalMove> </span> moves </p>
+                    <p>in <span id=totalTime> </span> </p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Next Level 😄
+                </button>
+            </div>
+        </div>
+        <script src="js/game.js"></script>
+    </body>
+</html>

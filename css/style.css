@@ -1,0 +1,544 @@
+@font-face {
+    font-family: 'shadows into light';
+    src: url('../font/ShadowsIntoLight.ttf');
+}
+
+.memory-menu-bar {
+    width: 100%;
+    height: 5%;
+    background-color: #333333;
+    paddin-left: 20px;
+}
+
+.memory-menu-bar .right {
+    color: #eee;
+    font-size: 25px;
+}
+
+#memory-settings-icon {
+    margin: 15px 10px 0 0;
+    width:25px;
+    height:25px;
+}
+
+.memory-app-name {
+    color: #eee;
+    margin: 10px 0;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+  /*modal css settings*/
+.modal{
+    position: fixed;
+    right:0;
+    top:0;
+    width: 100%;
+    height:95%;
+    background-color: black;
+    padding-top: 200px;
+}
+
+.modal-window{
+    min-width: 240px;
+    width: 50%;
+    min-height: 340px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccc;
+    background-color:#ff6d00;
+}
+
+.modal-header{
+    height:40px;
+    padding-left:10px;
+    background:#333333;
+}
+
+body{
+    margin:0px;
+    font-family: 'Shadows Into Light';
+    /*background:#0e0e0e;*/
+    display:block;
+    width:100%;
+    height:100%;
+}
+
+.modal-text{
+    position:relative;
+    float:left;
+
+    font-size: 30px;
+}
+
+#memory--settings-icon {
+    height: 24px;
+    display: block;
+    padding:4px 8px;
+    float: right;
+}
+
+
+#memory-options,
+#name-text,
+#start-button {
+    text-align-last: center;
+    width:100%;
+    margin-bottom:16px;
+    font-size:26px;
+    background:transparent;
+    color:black;
+    height:50px;
+    text-align: center;
+    border-color: black;
+    border-round:2px;
+    font-family:'Shadows Into Light';
+}
+
+.start-form {
+    width:40%;
+    margin:0 Auto;
+    color:black;
+}
+
+/*asdfas*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 16px;
+}
+
+.container {
+    margin-top:40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+
+/*
+ * Styles for the deck of cards
+ */
+
+.deck-2 {
+    width:500px !important;
+    height:400px !important;
+}
+
+.deck-3 {
+    width:600px !important;
+    height:500px !important;
+}
+
+.deck-4 {
+    width:700px !important;
+    height:600px !important;
+}
+
+.deck-5 {
+    width:850px !important;
+    height:700px !important;
+}
+
+
+
+
+
+.deck {
+    width: 85%;
+    background: rgba(0, 18, 113, 0);
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 0 3em;
+}
+
+.deck .card {
+    height: 3.7rem;
+    width: 3.7rem;
+    margin: 0.2rem 0.2rem;
+    background-image: url(../images/card.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+ /*back image set to card*/
+#card1.open,#card2.open {
+    background-image: url("../images/aston-martin.jpg");
+}
+#card3.open,#card4.open {
+    background-image: url("../images/audi.jpg");
+}
+#card5.open,#card6.open {
+    background-image: url("../images/bentley.jpg");
+}
+#card7.open,#card8.open {
+    background-image: url("../images/bmw.jpg");
+}
+#card9.open,#card10.open {
+    background-image: url("../images/ferrari.jpg");
+}
+#card11.open,#card12.open {
+    background-image: url("../images/honda.jpg");
+}
+#card13.open,#card14.open {
+    background-image: url("../images/hyundai.jpg");
+}
+#card15.open,#card16.open {
+    background-image: url("../images/jaguar.jpg");
+}
+#card17.open,#card18.open {
+    background-image: url("../images/lamborghini.jpg");
+}
+#card19.open,#card20.open {
+    background-image: url("../images/mercedes.jpg");
+}
+#card21.open,#card22.open {
+    background-image: url("../images/mitsubishi.jpg");
+}
+#card23.open,#card24.open {
+    background-image: url("../images/porsche.jpg");
+}
+#card25.open,#card26.open {
+    background-image: url("../images/skoda.jpg");
+}
+#card27.open,#card28.open {
+    background-image: url("../images/toyota.jpg");
+}
+#card29.open,#card30.open {
+    background-image: url("../images/volkswagen.jpg");
+}
+
+
+
+
+
+.deck .card.open {
+    transform: rotateY(0);
+    cursor: default;
+    animation-name: flipInY;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .75s;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background-image: url(../images/original.jpg);
+    font-size: 33px;
+    animation-name: rubberBand;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .45s;
+}
+
+.deck .card.unmatched {
+    animation-name: pulse;
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-duration: .45s;
+    background: #e2839b;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+.left {
+    position: relative;
+    float:left;
+}
+
+.right {
+    position: relative;
+    float:right;
+}
+
+.deck.card.disabled {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+
+.score-panel {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+
+.fa-star {
+    color: #FFD700;
+}
+
+.timer {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+
+/*
+ * Styles for congratulations modal
+ */
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 85%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+
+.popup .close:hover {
+    color: #E5F720;
+}
+
+.popup .content-1,
+.content-2 {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+}
+
+.show {
+    visibility: visible !important;
+    opacity: 100 !important;
+}
+
+#starRating li {
+    display: inline-block;
+}
+
+#play-again {
+    background-color: #141214;
+    padding: 0.7rem 1rem;
+    font-size: 1.1rem;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+/* animations */
+@keyframes flipInY {
+    from {
+        transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    40% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+        animation-timing-function: ease-in;
+    }
+
+    60% {
+        transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+
+    to {
+        transform: perspective(400px);
+    }
+}
+
+@keyframes rubberBand {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
+/****** Media queries
+***************************/
+
+
+@media (max-width: 320px) {
+    .deck {
+        width: 85%;
+    }
+
+    .deck .card {
+        height: 4.7rem;
+        width: 4.7rem;
+    }
+}
+
+
+/* For Tablets and larger screens
+****************/
+
+@media (min-width: 768px) {
+    .container {
+        font-size: 22px;
+    }
+
+    .deck {
+        width: 880px;
+        height: 680px;
+    }
+
+    .deck .card {
+        height: 125px;
+        width: 125px;
+    }
+
+    .popup {
+        width: 60%;
+    }
+}
+
+.
+
