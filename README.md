@@ -1,2 +1,3 @@
-# card-php
+# cardgame-javascript
+
 memory card game
